@@ -1,0 +1,34 @@
+/*---- MOBILE (720 x 1280) ----*/
+
+@media (min-width: 1024px) {
+
+
+    .search-header {
+        position: absolute;
+        right: 2.750rem;
+        top: 88px;
+        height: 1.39rem;
+    }
+
+    #search-input-header {
+        font-size: var(--fs-body-normal);
+        padding: 4px 0 4px 6px;
+        background-color: transparent;
+        color: var(--c-octonary);
+        border: none;
+        border-bottom: .125rem solid var(--c-octonary);
+        width: 12.375rem;
+    }
+
+    #search-input-header::placeholder {
+        color: var(--c-octonary);
+        opacity: .5;
+    }
+
+    #search-input-header:focus {
+        outline-color: var(--c-octonary);
+        outline-width: .125rem;
+        outline-style: solid;
+        caret-color: var(--c-octonary);
+    }
+}

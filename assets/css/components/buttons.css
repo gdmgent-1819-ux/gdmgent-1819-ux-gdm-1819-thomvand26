@@ -1,0 +1,237 @@
+a {
+    color: inherit;
+    text-decoration: inherit
+}
+
+
+
+/*---- MOBILE (720 x 1280) ----*/
+
+.btn {
+    display: flex;
+    border-radius: 1.875rem;
+    width: 13.125rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: var(--fs-subtitle);
+}
+
+.btn-dark {
+    background-color: var(--c-senary);
+    color: var(--c-octonary);
+}
+
+.btn-dark:hover {
+    background-color: var(--c-quaternary);
+}
+
+.btn-light {
+    background-color: var(--c-tertiary);
+    color: var(--c-senary);
+}
+
+.btn-light:hover{
+    background-color: var(--c-primary);
+    color: var(--c-octonary);
+}
+
+.btn-intro {
+    position: absolute;
+    width: 25.875rem;
+    height: 3.750rem;
+    font-size: var(--fs-headline-normal);
+    font-weight: bold;
+    bottom: -1.875rem;
+    left: calc(50% - 25.875rem/2);
+}
+
+.card-body .btn {
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 13.125rem/2)
+}
+
+.nav-footer a:hover {
+    color: var(--c-tertiary);
+}
+
+.link {
+    display: flex;
+    position: relative;
+    background-color: var(--c-octonary);
+    color: var(--c-senary);
+    width: fit-content;
+    height: 2.5rem;
+    padding-left: 52px;
+    padding-right: 60.46px;
+    margin-bottom: 0.938rem;
+    border-radius: 45px;
+}
+
+.link:hover {
+    background-color: var(--c-tertiary);
+}
+
+.link:hover .link-circle {
+    background-color: var(--c-octonary);
+}
+
+.link:last-child {
+    margin-bottom: 0;
+}
+
+.link-content {
+    height: fit-content;
+    margin: auto 0;
+}
+
+.link h2 {
+    font-size: var(--fs-body-normal);
+}
+
+.up {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: calc(50% - 30px);
+    top: -30px;
+    width: 60px;
+    height: 60px;
+    background-color: var(--c-primary);
+    color: var(--c-octonary);
+    border-radius: 50%;
+}
+
+.up:hover {
+    background-color: var(--c-quaternary);
+}
+
+.fa-angle-up {
+    font-size: 52px;
+}
+
+
+
+
+
+/*---- DESKTOP ----*/
+
+@media (min-width: 1024px) {
+
+
+    .fa-search {
+        color: var(--c-octonary);
+        font-size: 1.093rem;
+        margin-right: .750rem;
+    }
+
+    .fa-search:hover {
+        color: var(--c-tertiary);
+    }
+
+    .btn {
+        width: 19.125rem;
+    }
+
+    .btn-intro {
+        width: 25.875rem;
+    }
+
+    .nav-btn {
+        display: block;
+        text-decoration: none;
+    }
+
+    .nav-main-btn {
+        display: block;
+        margin: 1rem .75rem;
+        color: var(--c-octonary);
+        font-size: var(--fs-body-normal);
+
+        height: 1.3rem;
+    }
+
+    .nav-main-btn:hover {
+        color: var(--c-tertiary);
+    }
+
+    .nav-sec-btn {
+        color: var(--c-senary);
+        margin: 0 .75rem;
+    }
+
+    .nav-sec-btn:hover {
+        color: var(--c-quaternary);
+    }
+
+    .lang-selected {
+        font-weight: bold;
+    }
+
+    .card-body .btn {
+        position: absolute;
+        bottom: -20px;
+        left: calc(50% - 19.125rem/2)
+    }
+
+    .link {
+        display: flex;
+        position: relative;
+        background-color: var(--c-octonary);
+        color: var(--c-senary);
+        width: fit-content;
+        height: 36px;
+        padding-left: 52px;
+        padding-right: 60.46px;
+        margin-bottom: 0.5rem;
+        border-radius: 45px;
+    }
+
+    .link:last-child {
+        margin-bottom: 0;
+    }
+
+    .link-content {
+        height: fit-content;
+        margin: auto 0;
+    }
+
+    .link h2 {
+        font-size: var(--fs-body-normal);
+    }
+
+    .up {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 44px;
+        top: -19px;
+        width: 38px;
+        height: 38px;
+        background-color: var(--c-primary);
+        color: var(--c-octonary);
+        border-radius: 50%;
+    }
+
+    .fa-angle-up {
+        font-size: 30px;
+    }
+
+    #tent-card .btn {
+        margin-top: .5rem;
+    }
+
+    #EN {
+        margin-left: .5rem;
+        opacity: .5;
+    }
+
+    #nav-home {
+        border-bottom: .125rem solid var(--c-tertiary);
+        color: var(--c-tertiary);
+    }
+}

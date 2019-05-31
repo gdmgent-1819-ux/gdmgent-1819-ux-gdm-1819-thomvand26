@@ -3,15 +3,345 @@
     font-weight: 400;
     color: #333;
     margin: 1rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
 }
 
 .sg-subtitle {
     font-size: 1rem;
-    border-bottom: solid 1px #aaa;
+    border-bottom: 1px solid #aaa;
     font-weight: 400;
     color: #666;
     text-transform: uppercase;
-    margin: 2rem 0 .5rem 0;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    margin: 8rem 0 3rem 0;
+}
+
+.sg-container > h2:first-of-type {
+    margin: 0 0 3rem 0;
+}
+
+.sg-container * {
+    position: initial;
+}
+
+.sg-bg-dark {
+    background-color: var(--c-senary);
+}
+
+.sg-bg-blue {
+    background-color: var(--c-quaternary);
+}
+
+
+
+/*-- COLORS --*/
+
+.sg-c-container {
+    display: flex;
+    border: .5rem solid black;
+}
+
+.sg-c-container > div {
+    width: 100%;
+    height: 16rem;
+}
+
+.sg-c-container h2 {
+    text-align: center;
+}
+
+.sg-c-primary {
+    background-color: var(--c-primary);
+}
+
+.sg-c-secondary {
+    background-color: var(--c-secondary);
+}
+
+.sg-c-tertiary {
+    background-color: var(--c-tertiary);
+}
+
+.sg-c-quaternary {
+    background-color: var(--c-quaternary);
+}
+
+.sg-c-quinary {
+    background-color: var(--c-quinary);
+}
+
+.sg-c-senary {
+    background-color: var(--c-senary);
+}
+
+.sg-c-septenary {
+    background-color: var(--c-septenary);
+}
+
+.sg-c-octonary {
+    background-color: var(--c-octonary);
+}
+
+
+
+/*-- TYPOGRAPHY --*/
+
+.t-font {
+    color: var(--c-septenary);
+    font-size: var(--fs-subtitle);
+    margin-bottom: var(--fs-subtitle);
+}
+
+.t-headline-big {
+    font-size: var(--fs-headline-big);
+    margin-bottom: var(--fs-headline-normal);
+    color: var(--c-senary);
+}
+
+.t-headline-normal {
+    font-size: var(--fs-headline-normal);
+    margin-bottom: var(--fs-headline-normal);
+    color: var(--c-senary);
+}
+
+.t-subtitle {
+    font-size: var(--fs-subtitle);
+    margin-bottom: var(--fs-subtitle);
+    color: var(--c-senary);
+}
+
+.t-body-normal {
+    font-size: var(--fs-body-normal);
+    margin-bottom: var(--fs-body-normal);
+    color: var(--c-primary);
+}
+
+.t-body-small {
+    font-size: var(--fs-body-small);
+    margin-bottom: var(--fs-body-small);
+    color: var(--c-primary);
+}
+
+
+
+/*-- BUTTONS --*/
+
+.sg-btn-container > *, .sg-dark > *, #sg-link {
+    margin-bottom: 2rem;
+}
+
+.sg-dark {
+    padding: 1rem;
+}
+
+.sg-btn {
+    padding: .5rem;
+    height: 2rem;
+    margin: 0;
+    width: fit-content;
+}
+
+.sg-btn-selected-1 {
+    color: var(--c-tertiary);
+    border-bottom: .125rem solid var(--c-tertiary);
+}
+
+.sg-btn-selected-2 {
+    color: var(--c-quaternary);
+    border-bottom: .125rem solid var(--c-quaternary);
+}
+
+.sg-nav-main-container, .sg-nav-sec-container {
+    display: flex;
+}
+
+.sg-round-btn-container > .up {
+    margin-right: 1rem;
+}
+
+.sg-nav-main {
+    display: initial;
+}
+
+.sg-nav-sec {
+    font-size: var(--fs-body-small);
+}
+
+.sg-round-btn-container {
+    display: flex;
+}
+
+.sg-btn-left {
+    transform: rotate(-90deg);
+}
+
+.sg-btn-right {
+    transform: rotate(90deg);
+}
+
+.sg-btn-close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    background-color: var(--c-septenary);
+    color: var(--c-octonary);
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+.sg-btn-close:hover {
+    filter: contrast(130%);
+}
+
+.sg-search {
+    width: 2rem;
+    height: 2rem;
+    padding: .5rem;
+}
+
+.sg-link {
+    position: relative;
+}
+
+.sg-link-circle {
+    position: absolute;
+}
+
+.sg-verblijven-container {
+    display: block;
+    border-radius: 30px;
+    width: 414px;
+    height: 198px;
+    background-color: var(--c-secondary);
+    color: var(--c-senary);
+    font-weight: bold;
+    text-align: center;
+    padding-top: 24px;
+}
+
+.sg-verblijven-container:hover {
+    background-color: var(--c-tertiary);
+}
+
+.sg-verblijven-container h3 {
+    font-size: var(--fs-headline-normal);
+}
+
+.fa-campground {
+    font-size: 96px;
+    margin-top: 22px;
+}
+
+.sg-download {
+    display: block;
+    font-size: var(--fs-headline-normal);
+    font-weight: bold;
+    color: var(--c-senary);
+    height: 36px;
+    width: fit-content;
+    border-bottom: 2px solid var(--c-senary);
+}
+
+
+
+/*-- FORMS --*/
+
+.sg-form-container > * {
+    margin-bottom: 2rem;
+}
+
+.sg-form-search {
+    padding: 1rem;
+}
+
+.sg-filter {
+    display: flex;
+    padding: 8px;
+}
+
+.sg-filter > * {
+    margin-right: var(--l-gutter);
+}
+
+.sg-prijs > h3, .sg-sorteer > h3, .sg-dropdown > h3 {
+    color: var(--c-secondary);
+    font-size: var(--fs-subtitle);
+    font-weight: normal;
+}
+
+.sg-dropdown {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: var(--c-secondary);
+    background-color: var(--c-quinary);
+}
+
+.sg-dropdown > .fa-angle-up {
+    position: absolute;
+    transform: rotate(180deg);
+    font-size: 1rem;
+    right: 6px;
+}
+
+.sg-prijs .sg-dropdown {
+    width: 198px;
+    height: 22px;
+}
+
+.sg-sorteer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sg-sorteer .sg-dropdown {
+    margin-left: 10px;
+    width: 126px;
+    height: 44px;
+}
+
+.sg-form-input-standard {
+    color: var(--c-quaternary);
+    font-size: var(--fs-subtitle);
+}
+
+.sg-form-input-standard input {
+    border: none;
+    border-bottom: 2px solid var(--c-primary);
+    color: var(--c-primary);
+    padding: 4px 0 4px 6px;
+    margin-left: 4rem;
+}
+
+.sg-form-input-standard input::placeholder {
+    color: var(--c-primary);
+    opacity: .5;
+}
+
+.sg-form-input-standard input:focus {
+    outline: 2px solid var(--c-primary);
+    caret-color: var(--c-quaternary);
+}
+
+.sg-form-checkbox, .sg-form-radiobtn {
+    display: flex;    
+    color: var(--c-quaternary);
+}
+
+.sg-form-checkbox h3, .sg-form-radiobtn h3 {
+    font-size: var(--fs-subtitle);
+    font-weight: normal;
+}
+
+.sg-form-square, .sg-form-circle {
+    width: 22px;
+    height: 22px;
+    border: 4px solid var(--c-primary);
+    margin-left: 2.25rem;
+}
+.sg-form-circle {
+    border-radius: 50%;
+    margin-left: 1.7rem;
 }

@@ -1,26 +1,40 @@
-
 :root {
   /**
    * Colour palette
    */
-  --c-primary: hsl(190, 100%, 40%);
+  --c-primary: #479DD7;
+  --c-secondary: #CBF5FC;
+  --c-tertiary: #5AE3FF;
+  --c-quaternary: #397EAC;
+  --c-quinary: #20608A;
+  --c-senary: #1F4863;
+
+  --c-septenary: #DE615F;
+  --c-octonary: #FFFFFF;
 
   /**
    * Layout
    */
-  --l-gutter: 1rem;
+  --l-gutter: 1.125rem;
 
   /**
    * Typography
    */
-  --t-primary: Arial, Helvetica, sans-serif;
-  --t-secondary: Arial, Helvetica, sans-serif;
-  --t-tertiary: monospace;
+  --t-primary: Bahnschrift, Helvetica, sans-serif;
 
   --t-headline: var(--t-primary);
   --t-subtitle: var(--t-primary);
-  --t-body: var(--t-secondary);
+  --t-body: var(--t-primary);
   --t-code: var(--t-tertiary);
+
+  /**
+   * Font Size
+   */
+   --fs-headline-big: 6.250rem;
+   --fs-headline-normal: 1.875rem;
+   --fs-subtitle: 1.125rem;
+   --fs-body-normal: .875rem;
+   --fs-body-small: .750rem;
 }
 
 

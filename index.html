@@ -6,7 +6,187 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Eindopdracht UX</title>
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
+    <header id="top">
+        <a href="" class="fas fa-bars mobile" id="bars"></a>
+        <a href="#top" class="logo" id="logo-header"></a>
+        <ul class="nav nav-main desktop">
+            <li><a href="#top" class="nav-btn nav-main-btn" id="nav-home">Home</a></li>
+            <li><a href="" class="nav-btn nav-main-btn">Camping</a></li>
+            <li><a href="" class="nav-btn nav-main-btn">Omgeving & activiteiten</a></li>
+            <li><a href="" class="nav-btn nav-main-btn">Bereikbaarheid</a></li>
+            <li><a href="" class="nav-btn nav-main-btn">Foto's</a></li>
+            <li><a href="" class="nav-btn nav-main-btn">Contact</a></li>
+        </ul>
+        <ul class="nav nav-sec desktop">
+            <li>
+                <div class="lang">
+                    <li class="lang-selected" id="NL">Nederlands</li>
+                    <li class="lang-deselected"><a href="" class="nav-btn nav-sec-btn" id="EN">English</a></li>
+                </div>
+            </li>
+            <li><a href="" class="nav-btn nav-sec-btn">FAQ</a></li>
+            <li><a href="" class="nav-btn nav-sec-btn">Algemene voorwaarden & privacybeleid</a></li>
+        </ul>
+        <div class="search-header desktop">
+            <a href="" class="fas fa-search"></a>
+            <input type="text" id="search-input-header" placeholder="Zoeken">
+        </div>
+    </header>
+
+    <!-- For mobile -->
+    <aside class="mobile">
+        <ul class="nav nav-main">
+            <li><a href="#top" class="nav-btn nav-main-btn" id="nav-home">Home</a></li>
+            <li><a href="" class="nav-btn nav-main-btn">Camping</a></li>
+            <li><a href="" class="nav-btn nav-main-btn">Omgeving & activiteiten</a></li>
+            <li><a href="" class="nav-btn nav-main-btn">Bereikbaarheid</a></li>
+            <li><a href="" class="nav-btn nav-main-btn">Foto's</a></li>
+            <li><a href="" class="nav-btn nav-main-btn">Contact</a></li>
+        </ul>
+        <ul class="nav nav-sec">
+            <li>
+                <div class="lang">
+                    <li class="lang-selected" id="NL">Nederlands</li>
+                    <li class="lang-deselected"><a href="" class="nav-btn nav-sec-btn" id="EN">English</a></li>
+                </div>
+            </li>
+            <li><a href="" class="nav-btn nav-sec-btn">FAQ</a></li>
+            <li><a href="" class="nav-btn nav-sec-btn">Algemene voorwaarden & privacybeleid</a></li>
+        </ul>
+    </aside>
+    
+    <main>
+        <div class="intro">
+            <div class="intro-text">
+                <h1>Kom kamperen bij Naturama!</h1>
+                <p>Op onze camping heerst er een gezellige sfeer waar verschillende activiteiten te beleven zijn. Ook rond de camping zijn er een waaier aan mogelijkheden om plezier te beleven!</p>
+            </div>
+            <a href="" class="btn btn-light btn-intro">Bekijk ons aanbod</a>
+        </div>
+
+        <div class="content">
+            <div class="card">
+                <div id="pic-tipi" class="pic-card"><div class="new">NIEUW!</div></div>
+                <div class="card-text">
+                    <h2>Probeer onze tipi's!</h2>
+                    <p class="desktop">- 2 tot 10 personen <br>- Beschikbaar vanaf 1 juli</p>
+                    <a href="" class="btn btn-dark">Bekijk ons aanbod!</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="pic-archery" class="pic-card mobile"><div class="new">NIEUW!</div></div>
+                <div class="card-text">
+                    <h2>Kom boogschieten!</h2>
+                    <p class="desktop">- 1 tot 6 personen <br>- Beschikbaar vanaf 14 juli</p>
+                    <a href="" class="btn btn-dark">Meer info</a>
+                </div>
+                <div id="pic-archery" class="pic-card desktop"><div class="new">NIEUW!</div></div>
+            </div>
+
+            <div id="wifi-card" class="card">
+                <div class="card-circle"><i class="fas fa-wifi"></i></div>
+                <div class="card-body card-body-wifi">
+                    <p>Op heel het domein is er GRATIS wifi beschikbaar</p>
+                    <a href="" class="btn btn-light">Voorzieningen</a>
+                </div>
+            </div>
+
+            <div id="tent-card" class="card">
+                <div id="pic-tent" class="pic-card"><div class="offer">AANBIEDING!</div></div>
+                <div id="offer-card-text" class="card-text">
+                    <h2>Luxe tent</h2>
+                    <p class="desktop">- 4 personen <br>- van 5 tot 7 juli (3 dagen, 2 nachten)</p>
+                    <div class="price-container">
+                        <strike id="old-price">€ 200</strike>
+                        <div class="price-box">
+                            <div class="price">€ 150</div>
+                            <span>per tent</span>
+                        </div>
+                    </div>
+                    <a href="" class="btn btn-dark">Reserveer</a>
+                </div>
+            </div>
+
+            <div class="card" id="transport-card">
+                <div class="card-oval">
+                    <i class="fas fa-bicycle"></i>
+                    <i class="fas fa-car-side"></i>
+                    <i class="fas fa-subway"></i>
+                </div>
+                <div class="card-body">
+                    <p>Kom met de fiets, auto of openbaar vervoer. <br>Ontdek de beste route!</p>
+                    <a href="" class="btn btn-light">Bereikbaarheid</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <a href="#top" class="up">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <div class="footer-content">
+            <a href="#top" class="logo" id="logo-footer"></a>
+
+            <div class="nav-footer desktop">
+                <ul class="footer-left">
+                    <li><a href="">Over ons</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">English</a></li>
+                </ul>
+                <ul class="footer-right">
+                    <li><a href="">Algemene voorwaarden</a></li>
+                    <li><a href="">Privacybeleid</a></li>
+                    <li><a href="">Cookiebeleid</a></li>
+                </ul>
+            </div>
+
+            <!-- For mobile -->
+            <div class="footer-nav-links-container">
+                <div class="nav-footer mobile">
+                    <ul>
+                        <li><a href="">Over ons</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Algemene voorwaarden<br>& privacybeleid</a></li>
+                        <li><a href="">English</a></li>
+                    </ul>
+                </div>
+    
+                <div class="footer-links">
+                    <a href="" class="link"><div class="link-content">
+                        <div class="link-circle">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                        <h2>Naturama</h2>
+                    </div></a>
+                    <a href="" class="link"><div class="link-content">
+                        <div class="link-circle">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <h2>@CampingNaturama</h2>
+                    </div></a>
+                    <a href="" class="link"><div class="link-content">
+                        <div class="link-circle">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <h2>CampingNaturama</h2>
+                    </div></a>
+                    <a href="" class="link"><div class="link-content">
+                        <div class="link-circle">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h2>@campingnaturama</h2>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
