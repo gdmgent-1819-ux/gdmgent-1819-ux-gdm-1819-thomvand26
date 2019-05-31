@@ -94,7 +94,7 @@ aside {
 .content {
     display: flex;
     flex-direction: column;
-    width: 91.388888%;
+    max-width: 846px;
     margin: 0 auto;
     margin-top: 9.875rem;
 }
